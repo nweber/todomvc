@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "cycle-browser",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-release": "mkdir -p build && browserify src/app.js -t babelify --outfile build/app.js",
+    "uglify": "uglifyjs build/app.js -o build/app.min.js",
+    "build": "npm run build-release && npm run uglify",
+    "start": "budo src/app.js --live --open --port 8080 --dir ./ -- -t babelify"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cycle/dom": "^5.3.1",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "budo": "^5.1.1",
+    "uglify-js": "^2.4.24"
+  }
+}
