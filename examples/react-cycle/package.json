@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "cycle_react",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cycle/core": "^3.1.0",
+    "immutable": "^3.7.5",
+    "lodash": "^3.10.1",
+    "lodash.mapvalues": "^3.0.1",
+    "react": "^0.14.0"
+  }
+}
